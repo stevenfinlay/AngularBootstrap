@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+.main
+{
+  .sidebarExpanded
+  {
+    width: 200px !important;
+  }
+
+  .sidebarContracted
+  {
+    width: 40px !important;
+  }
+
+  .contentExpanded
+  {
+    margin-left: 40px !important;
+  }
+
+  .contentContracted
+  {
+    margin-left: 200px !important;
+  }
+
+  & .sidebar
+  {
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+    transition: 0.5s;
+    overflow: auto;
+
+    & div
+    {
+      padding: 8px 8px 8px 30px;
+      font-size: 24px;
+      display: block;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    & .closeBtn
+    {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    & .openBtn
+    {
+      font-size: 24px;
+      cursor: pointer;
+      background-color: lightblue;
+    }
+  }
+
+  .content
+  {
+    margin-left: 200px;
+    font-size: 16px;
+    transition: margin-left 0.5s;
+  }
+}
+
+.red
+{
+  background-color: lightgray !important;
+  top: 40px !important;
+  width: 250px !important;
+}
